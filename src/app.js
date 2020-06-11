@@ -17,6 +17,7 @@ const App = () => {
   }
 
   function clearSearch() {
+    console.log("{Clear search}");
     notesSearch.value = "";
   }
 
@@ -30,7 +31,7 @@ const App = () => {
     notes.map((note) => renderNote(note));
   }
 
-  function renderTNewNote() {
+  function renderNewNote() {
     const newNoteNode = document.querySelector("#js-new-note");
     console.log(`{Render NEW note}`);
     const note = {
@@ -58,12 +59,14 @@ const App = () => {
   }
 
   function bindEvents() {
+    console.log("{Let's bind some events}");
     notesSearch.addEventListener("keyup", doSearch);
   }
 
   function init() {
+    console.log("{Init app}");
     bindEvents();
-    renderTNewNote();
+    renderNewNote();
     search();
   }
 

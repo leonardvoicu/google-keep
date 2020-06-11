@@ -239,6 +239,7 @@ class Note {
   }
 
   render() {
+    console.log("{Start rendering note}");
     const noteContainer = this.createContainerNode();
 
     if (!!this.note.properties.backgroundImage) {
@@ -255,6 +256,8 @@ class Note {
     if (this.type === noteMode.NEW) {
       this.prepareToAddItem();
     }
+    console.log("{End rendering note}");
+    console.log("--------------------------------------------------");
     return noteContainer;
   }
 }
