@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/Roboto.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>GoogleKeep</title>
+</head>
+
+<body>
+  <header class="header-top">
+    <div class="container container--header">
+      <div class="logo-container">
+        <img class="logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" alt="">
+        <span class="app-title">Keep</span>
+      </div>
+      <div class="notes-search">
+        <span class="notes-search__button fa fa-search"></span>
+        <input class="notes-search__input" id="js-notes-search" type="text" placeholder="Search">
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div id="js-new-note" class="new-note-container">
+    </div>
+
+    <div id="notes" class="notes"></div>
+
+    <script src="src/v3/helpers.js"></script>
+    <script src="src/v3/colors.js"></script>
+    <script src="src/v3/NotesService.js"></script>
+    <script src="src/v3/app.js"></script>
+    <script src="src/v3/index.js"></script>
+</body>
+
+</html>
